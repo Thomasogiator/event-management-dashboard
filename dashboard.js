@@ -114,11 +114,19 @@ let main = document.getElementById('main-body')
 let footer = document.getElementById('container-footer')
 let search = document.getElementById('search')
 let first_el = document.getElementById('first-el')
+let home = document.getElementById('home')
+let calender = document.getElementById('calender')
+let speaker = document.getElementById('speaker')
+let report = document.getElementById('report')
+let profile = document.getElementById('profile')
 let containerHeader3 = document.getElementById('container-head2')
 let allComplet = document.querySelectorAll('.complete')
 let allProgres = document.querySelectorAll('.progress-status')
-let allGree = document.querySelectorAll('.green')
-let allBlu = document.querySelectorAll('.blue')
+let allRight = document.querySelectorAll('.img-right')
+let allDots = document.querySelectorAll('.img-dots')
+let allLeft = document.querySelectorAll('.img-left')
+let allDown = document.querySelectorAll('.img-down')
+let allExport = document.querySelectorAll('.img-export')
 
 darkMode.onclick = function(){
     header.classList.toggle('dark')
@@ -163,6 +171,41 @@ darkMode.onclick = function(){
     table_row.forEach(element => {
         element.classList.toggle('dark') 
     }) 
+    allRight.forEach(element => {
+        if(header.classList.contains('dark')){
+            element.src = './assets/darkMode/right.svg'
+        } else{
+            element.src = './assets/right.svg'
+        }
+    }) 
+    allDots.forEach(element => {
+        if(header.classList.contains('dark')){
+            element.src = './assets/darkMode/dots.svg'
+        } else{
+            element.src = './assets/dots.svg'
+        }
+    }) 
+    allLeft.forEach(element => {
+        if(header.classList.contains('dark')){
+            element.src = './assets/darkMode/left.svg'
+        } else{
+            element.src = './assets/left.svg'
+        }
+    }) 
+    allDown.forEach(element => {
+        if(header.classList.contains('dark')){
+            element.src = './assets/darkMode/down.svg'
+        } else{
+            element.src = './assets/dropdown.svg'
+        }
+    }) 
+    allExport.forEach(element => {
+        if(header.classList.contains('dark')){
+            element.src = './assets/darkMode/export.svg'
+        } else{
+            element.src = './assets/download.svg'
+        }
+    }) 
     allComplet.forEach(element => {
         element.style.backgroundColor = ''
         element.style.border = '1px solid #10B981'
@@ -171,6 +214,20 @@ darkMode.onclick = function(){
         element.style.backgroundColor = ''
         element.style.border = '1px solid #3B82F6'
     })
+
+    if(header.classList.contains('dark')){
+        home.src = './assets/darkMode/homeWhite.svg'
+        calender.src = './assets/darkMode/calenderWhite.svg'
+        speaker.src = './assets/darkMode/speaker.svg'
+        report.src = './assets/darkMode/report.svg'
+        profile.src = './assets/darkMode/profile.svg'
+    } else{
+        home.src = './assets/home.svg'
+        calender.src = './assets/calender.svg'
+        speaker.src = './assets/speaker.svg'
+        report.src = './assets/report.svg'
+        profile.src = './assets/profile.svg'
+    }
 }
 
 let collapse = document.getElementById('collapse')
