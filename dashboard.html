@@ -12,93 +12,208 @@
 </head>
 <body>
     <header>
-        <div>Full Logo</div>
-        <div class="hamburger" onclick="handleMenu()">
-            <img class="hamburger-img" src="./assets/hamburger.svg" alt="menu"/>
+        <div id="container-head">
+            <div>Full Logo</div>
+            <div class="hamburger" >
+                <img id="hamburger-img" src="./assets/hamburger.svg" alt="menu"/>
+            </div>
+            <nav id="mobile-nav" class="mobile-nav">
+                <div class="nav-top">
+                    <div id="first-el" class="nav-el">
+                        <span>
+                            <img src="./assets/home2.svg" alt="home">
+                        </span>Home
+                    </div>
+                    <div class="nav-el">
+                        <span>
+                            <img src="./assets/calender2.svg" alt="calender">
+                        </span>Events
+                    </div>
+                    <div class="nav-el">
+                        <span>
+                            <img src="./assets/speaker2.svg" alt="speaker">
+                        </span>Speakers
+                    </div>
+                    <div class="nav-el">
+                        <span>
+                            <img src="./assets/report2.svg" alt="report">
+                        </span>Reports
+                    </div>
+                    <div class="nav-el">
+                        <span>
+                            <img src="./assets/notification2.svg" alt="notification">
+                        </span>Notifications
+                    </div>
+                    <div class="nav-el">
+                        <span>
+                            <img src="./assets/message2.svg" alt="message">
+                        </span>Messages
+                    </div>
+                    <div class="nav-el">
+                        <span>
+                            <img src="./assets/setting2.svg" alt="setting">
+                        </span>Settings
+                    </div>
+                    <div class="nav-el">
+                        <span id="collapse">
+                            <img src="./assets/collapse.svg" alt="setting">
+                        </span>Collapse
+                    </div>
+                </div>
+                <div class="nav-bottom">
+                    <div>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                        <span class="nav-b">Dark mode</span>
+                    </div>
+                    <div>
+                        <span><img src="./assets/profile2.svg" alt="profile"></span>
+                        <span class="user-dets">
+                            <p class="nav-b">Rudra Devi</p>
+                            <p class="nav-b">rudra.devi@gmail.com</p>
+                        </span>
+                    </div>
+                </div>
+            </nav>
         </div>
-        <!-- <div class="hamburger" onclick="document.getElementById('hamburger-img').src='./assets/close.svg'">
-            <img id="hamburger-img" src="./assets/hamburger.svg" alt="menu"/>
-        </div> -->
+        <div id="container-head2">
+            <div></div>
+            <div class="hamburger" >
+                <img id="hamburger-img" src="./assets/hamburger.svg" alt="menu"/>
+            </div>
+            <nav id="mobile-nav" class="mobile-nav">
+                <div class="nav-top">
+                    <div id="first-el" class="nav-el">
+                        <span>
+                            <img src="./assets/home2.svg" alt="home">
+                        </span>
+                    </div>
+                    <div class="nav-el">
+                        <span>
+                            <img src="./assets/calender2.svg" alt="calender">
+                        </span>
+                    </div>
+                    <div class="nav-el">
+                        <span>
+                            <img src="./assets/speaker2.svg" alt="speaker">
+                        </span>
+                    </div>
+                    <div class="nav-el">
+                        <span>
+                            <img src="./assets/report2.svg" alt="report">
+                        </span>
+                    </div>
+                    <div class="nav-el">
+                        <span>
+                            <img src="./assets/notification2.svg" alt="notification">
+                        </span>
+                    </div>
+                    <div class="nav-el">
+                        <span>
+                            <img src="./assets/message2.svg" alt="message">
+                        </span>
+                    </div>
+                    <div class="nav-el">
+                        <span>
+                            <img src="./assets/setting2.svg" alt="setting">
+                        </span>
+                    </div>
+                    <div class="nav-el">
+                        <span id="collapse2">
+                            <img src="./assets/doubleRight.svg" alt="setting">
+                        </span>
+                    </div>
+                </div>
+                <div class="nav-bottom">
+                    <div>
+                        <span><img src="./assets/profile2.svg" alt="profile"></span>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
-    <nav>
-        <div>Home</div>
-        <div>Events</div>
-        <div>Speakers</div>
-        <div>Reports</div>
-        <div>Notifications</div>
-        <div>Messages</div>
-        <div>Settings</div>
-        <div>Dark mode</div>
-        <div></div>
-    </nav>
-    <main>
-        <h3>Welcome! here's your summary</h3>
+    <main id="main-body">
+        <h3 class="nav-b">Welcome! here's your summary</h3>
         <section>
             <div class="metrics">
                 <div class="metric-name">
-                    <span>Total Events</span>
+                    <span class="nav-b">Total Events</span>
                     <span>
                         <img src="./assets/information.svg" alt="info"/>
                     </span>
                 </div>
                 <div class="metric-value">
-                    <span>100,000</span>
+                    <span class="nav-b">100,000</span>
                     <span>
                         <img src="./assets/upward.svg" alt="info"/>
                     </span>
                     <span>+5.0%</span>
                 </div>
+                <div class="details">
+                    100,000
+                </div>
             </div>
             <div class="metrics">
                 <div class="metric-name">
-                    <span>Active Speakers</span>
+                    <span class="nav-b">Active Speakers</span>
                     <span>
                         <img src="./assets/information.svg" alt="info"/>
                     </span>
                 </div>
                 <div class="metric-value">
-                    <span>25</span>
+                    <span class="nav-b">25</span>
                     <span>
                         <img src="./assets/downward.svg" alt="info"/>
                     </span>
                     <span>-5.0%</span>
                 </div>
+                <div class="details">
+                    25
+                </div>
             </div>
             <div class="metrics">
                 <div class="metric-name">
-                    <span>Total Registrations</span>
+                    <span class="nav-b">Total Registrations</span>
                     <span>
                         <img src="./assets/information.svg" alt="info"/>
                     </span>
                 </div>
                 <div class="metric-value">
-                    <span>300</span>
+                    <span class="nav-b">300</span>
                     <span>
                         <img src="./assets/upward.svg" alt="info"/>
                     </span>
                     <span>+5.0%</span>
                 </div>
+                <div class="details">
+                    300
+                </div>
             </div>
             <div class="metrics">
                 <div class="metric-name">
-                    <span>Total Revenue</span>
+                    <span class="nav-b">Total Revenue</span>
                     <span>
                         <img src="./assets/information.svg" alt="info"/>
                     </span>
                 </div>
                 <div class="metric-value">
-                    <span>$500,000</span>
+                    <span class="nav-b">$500,000</span>
                     <span>
                         <img src="./assets/upward.svg" alt="info"/>
                     </span>
                     <span>+5.0%</span>
+                </div>
+                <div class="details">
+                    $500,000
                 </div>
             </div>
         </section>
         <section>
-            <div>Event Registrations per month</div>
+            <div class="nav-b">Event Registrations per month</div>
             <div>
-                <div>
+                <div class="tgraph">
                     <canvas id="myChart"></canvas>
                 </div>
                 <div>
@@ -111,12 +226,24 @@
                         <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img class="d-block w-100" id="responsiveImage" src="./assets/Slide.svg" alt="First slide">
+                            <div class="carousel-caption d-md-block">
+                                <h5>Latest News & Updates</h5>
+                                <p>Turpis interdum nunc varius ornare dignissim pretium. Massa ornare quis aliquet sed vitae. Sed velit nisi, fermentum erat. Fringilla purus, erat fringilla tincidunt quisque non. Pellentesque in ut tellus.</p>
+                            </div>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="./assets/Slide (1).svg" alt="Second slide">
+                            <img class="d-block w-100" id="responsiveImage2" src="./assets/Slide (1).svg" alt="Second slide">
+                            <div class="carousel-caption d-md-block">
+                                <h5>Latest News & Updates</h5>
+                                <p>Turpis interdum nunc varius ornare dignissim pretium. Massa ornare quis aliquet sed vitae. Sed velit nisi, fermentum erat. Fringilla purus, erat fringilla tincidunt quisque non. Pellentesque in ut tellus.</p>
+                            </div>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="./assets/Slide (2).svg" alt="Third slide">
+                            <img class="d-block w-100" id="responsiveImage3" src="./assets/Slide (2).svg" alt="Third slide">
+                            <div class="carousel-caption d-md-block">
+                                <h5>Latest News & Updates</h5>
+                                <p>Turpis interdum nunc varius ornare dignissim pretium. Massa ornare quis aliquet sed vitae. Sed velit nisi, fermentum erat. Fringilla purus, erat fringilla tincidunt quisque non. Pellentesque in ut tellus.</p>
+                            </div>
                         </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -132,94 +259,183 @@
             </div>
         </section>
         <section>
-            <div>Events History</div>
+            <div class="nav-b">Events History</div>
             <div class="tool-bar">
-                <div class="search-bar">
-                    <input type="search" name="search" placeholder="Search..."/>
-                    <img src="./assets/search.svg" alt="search">
-                </div>
-                <div class="tool">Date <img src="./assets/dropdown.svg" alt="dropdown"/></div>
-                <div class="tool">Status <img src="./assets/dropdown.svg" alt="dropdown"/></div>
-                <div class="tool">Name <img src="./assets/dropdown.svg" alt="dropdown"/></div>
-                <p>Displaying 100 results</p>
-                <div class="tool-bar-right">
-                    <span>Sort:</span>
-                    <div class="tool2">Most Recent <img src="./assets/dropdown.svg" alt="dropdown"/></div>
+                <div class="tool-bar-left">
+                    <div class="search-bar">
+                        <input id="search" type="search" name="search" placeholder="Search..."/>
+                        <img src="./assets/search.svg" alt="search">
+                    </div>
+                    <div class="tool">Date <img src="./assets/dropdown.svg" alt="dropdown"/></div>
+                    <div class="tool">Status <img src="./assets/dropdown.svg" alt="dropdown"/></div>
+                    <div class="tool">Name <img src="./assets/dropdown.svg" alt="dropdown"/></div>
+                    <p class="nav-b">Displaying 100 results</p>
                 </div>
                 <div class="tool-bar-right">
-                    <div class="tool3"><img src="./assets/dots.svg" alt="dots"></div>
-                    <div class="tool2"><img src="./assets/download.svg" alt="download"/> Export</div>
+                    <div>
+                        <span class="nav-b">Sort:</span>
+                        <div class="tool2">Most Recent <img src="./assets/dropdown.svg" alt="dropdown"/></div>
+                    </div>
+                    <div>
+                        <div class="tool3"><img src="./assets/dots.svg" alt="dots"></div>
+                        <div class="tool2"><img src="./assets/download.svg" alt="download"/> Export</div>
+                    </div>
                 </div>
             </div>
-            <table class="table">
-                <thead>
-                    <th colspan="2">Event Name</th>
-                    <th>Status</th>
+            <table class="table1">
+                <thead class="table1-head">
+                    <th colspan="2" class="nav-b">Event Name</th>
+                    <th class="nav-b">Status</th>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr class="event">
                         <td><div><img src="./assets/right.svg" alt="right"></div></td>
-                        <td>Cloud Innovation Summit</td>
+                        <td class="nav-b">Cloud Innovation Summit</td>
                         <td><div>Completed</div></td>
                     </tr>
-                    <tr>
+                    <tr class="event">
                         <td><div><img src="./assets/right.svg" alt="right"></div></td>
-                        <td>Blockchain Revolution Conference</td>
+                        <td class="nav-b">Blockchain Revolution Conference</td>
                         <td><div>Completed</div></td>
                     </tr>
-                    <tr>
+                    <tr class="event">
                         <td><div><img src="./assets/right.svg" alt="right"></div></td>
-                        <td>AI in Healthcare Symposium</td>
+                        <td class="nav-b">AI in Healthcare Symposium</td>
                         <td><div>In Progress</div></td>
                     </tr>
-                    <tr>
+                    <tr class="event">
                         <td><div><img src="./assets/right.svg" alt="right"></div></td>
-                        <td>Future of Fintech Forum</td>
+                        <td class="nav-b">Future of Fintech Forum</td>
                         <td><div>Completed</div></td>
                     </tr>
-                    <tr>
+                    <tr class="event">
                         <td><div><img src="./assets/right.svg" alt="right"></div></td>
-                        <td>Data Analytics in Business</td>
+                        <td class="nav-b">Data Analytics in Business</td>
                         <td><div>Completed</div></td>
                     </tr>
-                    <tr>
+                    <tr class="event">
                         <td><div><img src="./assets/right.svg" alt="right"></div></td>
-                        <td>Sustainable Energy Expo</td>
+                        <td class="nav-b">Sustainable Energy Expo</td>
                         <td><div>Completed</div></td>
                     </tr>
-                    <tr>
+                    <tr class="event">
                         <td><div><img src="./assets/right.svg" alt="right"></div></td>
-                        <td>Web3 Interfaces Workshop</td>
+                        <td class="nav-b">Web3 Interfaces Workshop</td>
                         <td><div>Completed</div></td>
                     </tr>
-                    <tr>
+                    <tr class="event">
                         <td><div><img src="./assets/right.svg" alt="right"></div></td>
-                        <td>Cybersecurity for Startups</td>
+                        <td class="nav-b">Cybersecurity for Startups</td>
                         <td><div>Completed</div></td>
                     </tr>
-                    <tr>
+                    <tr class="event">
                         <td><div><img src="./assets/right.svg" alt="right"></div></td>
-                        <td>Smart Cities Forum</td>
+                        <td class="nav-b">Smart Cities Forum</td>
                         <td><div>Completed</div></td>
                     </tr>
-                    <tr>
+                    <tr class="event">
                         <td><div><img src="./assets/right.svg" alt="right"></div></td>
-                        <td>Tech Safari Mixer</td>
+                        <td class="nav-b">Tech Safari Mixer</td>
                         <td><div>Completed</div></td>
                     </tr>
                 </tbody>
             </table>
+            <table class="table2">
+                <thead class="table1-head">
+                    <tr class="table1-head">
+                        <th class="nav-b">Event Name</th>
+                        <th class="nav-b">Date</th>
+                        <th class="nav-b">Speaker</th>
+                        <th class="nav-b">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="event">
+                        <td class="nav-b">Cloud Innovation Summit</td>
+                        <td class="nav-b">2024-10-15</td>
+                        <td class="nav-b">Jane Doe</td>
+                        <td><div class="complete"><span class="green"></span>Completed</div></td>
+                    </tr>
+                    <tr class="event">
+                        <td class="nav-b">Blockchain Revolution Conference</td>
+                        <td class="nav-b">2024-11-05</td>
+                        <td class="nav-b">Dr. Peter Smith</td>
+                        <td><div class="progress-status"><span class="blue"></span>In Progress</div></td>
+                    </tr>
+                    <tr class="event">
+                        <td class="nav-b">AI in Healthcare Symposium</td>
+                        <td class="nav-b">2024-12-01</td>
+                        <td class="nav-b">Dr. Aisha Malik</td>
+                        <td><div class="complete"><span class="green"></span>Completed</div></td>
+                    </tr>
+                    <tr class="event">
+                        <td class="nav-b">Future of Fintech Forum</td>
+                        <td class="nav-b">2024-10-25</td>
+                        <td class="nav-b">John Lee</td>
+                        <td><div class="complete"><span class="green"></span>Completed</div></td>
+                    </tr>
+                    <tr class="event">
+                        <td class="nav-b">Data Analytics in Business</td>
+                        <td class="nav-b">2024-11-12</td>
+                        <td class="nav-b">Rachel Moore</td>
+                        <td><div class="complete"><span class="green"></span>Completed</div></td>
+                    </tr>
+                    <tr class="event">
+                        <td class="nav-b">Sustainable Energy Expo</td>
+                        <td class="nav-b">2024-09-28</td>
+                        <td class="nav-b">Prof. Alan Green</td>
+                        <td><div class="complete"><span class="green"></span>Completed</div></td>
+                    </tr>
+                    <tr class="event">
+                        <td class="nav-b">Web3 Interfaces Workshop</td>
+                        <td class="nav-b">2024-10-10</td>
+                        <td class="nav-b">Kevin Adams</td>
+                        <td><div class="progress-status"><span class="blue"></span>In Progress</div></td>
+                    </tr>
+                    <tr class="event">
+                        <td class="nav-b">Cybersecurity for Startups</td>
+                        <td class="nav-b">2024-11-19</td>
+                        <td class="nav-b">Emily Zhang</td>
+                        <td><div class="complete"><span class="green"></span>Completed</div></td>
+                    </tr>
+                    <tr class="event">
+                        <td class="nav-b">Smart Cities Forum</td>
+                        <td class="nav-b">2024-10-18</td>
+                        <td class="nav-b">Dr. Maria Hernandez</td>
+                        <td><div class="progress-status"><span class="blue"></span>In Progress</div></td>
+                    </tr>
+                    <tr class="event">
+                        <td class="nav-b">Tech Safari Mixer</td>
+                        <td class="nav-b">2024-09-30</td>
+                        <td class="nav-b">Guest Panel</td>
+                        <td><div class="progress-status"><span class="blue"></span>In Progress</div></td>
+                    </tr>
+                </tbody>
+            </table>
             <div class="pagination">
-                <div><img src="./assets/left.svg" alt="left"></div>
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-                <div><img src="./assets/right.svg" alt="right"></div>
-                <div>10 rows <img src="./assets/dropdown.svg" alt="dropdown"/><im</div>
+                <div class="navig"><img src="./assets/left.svg" alt="left"></div>
+                <div class="nav-b">1</div>
+                <div class="nav-b">2</div>
+                <div class="nav-b">3</div>
+                <div class="tool2"><img src="./assets/right.svg" alt="right"></div>
+                <div class="tool2">10 rows <img src="./assets/dropdown.svg" alt="dropdown"/></div>
+            </div>
+            <div class="pagination-desktop">
+                <div>
+                    <div class="navig2"><img src="./assets/left.svg" alt="left"></div>
+                    <div class="nav-b">1</div>
+                    <div class="nav-b">2</div>
+                    <div class="nav-b">3</div>
+                    <div class="tool2"><img src="./assets/right.svg" alt="right"></div>
+                </div>
+                <div class="nav-b">
+                    Show: <div class="tool2">10 rows <img src="./assets/dropdown.svg" alt="dropdown"/><im</div>
+                </div>
             </div>
         </section>
+        
     </main>
-    <footer>
+    <footer id="container-footer">
         <div>
             <div class="icon-cover"><img src="./assets/home.svg" alt="alt"></div>
             Home
@@ -241,18 +457,30 @@
             Profile
         </div>
     </footer>
-
+    <dialog class="event-modal">
+        <div class="modal-top">
+            <h3 class="nav-b">Event Name</h3>
+            <div class="hamburger isactive" id="modal-close"><img src="./assets/close.svg" alt="menu"/></div>
+        </div>
+        <h4 class="nav-b">Event Date</h4>
+        <p class="nav-b">Event Description</p>
+        <div class="speakers">
+            <div><img src="./assets//Avatar Group.svg" alt="avatar"></div>
+            <div class="nav-b">3 Guest Speakers: Speaker name A, Speaker name B, Speaker name C. 300 Attendees</div>
+        </div>
+        <div class="modal-btn">
+            <button>Edit</button>
+            <div>
+                <button>Delete</button>
+                <button>Mark as completed</button>
+            </div>
+        </div>
+    </dialog>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="chart.js"></script>
     <script src="dashboard.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <!-- <script>
-        function handleMenu(){
-            console.log('clicked');
-            
-        }
-    </script> -->
 </body>
 </html>
